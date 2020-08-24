@@ -33,12 +33,25 @@ body .container header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body .container header nav #logo {
   font-size: 3.1rem;
   text-decoration: none;
   color: #2F80ED;
+}
+
+body .container header nav .hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+body .container header nav .hamburger:focus {
+  outline: none;
 }
 
 body .container header nav ul {
@@ -49,9 +62,6 @@ body .container header nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: spa;
-      -ms-flex-pack: spa;
-          justify-content: spa;
 }
 
 body .container header nav ul li {
@@ -71,6 +81,39 @@ body .container header nav ul #resume {
   border: 1.5px solid #2F80ED;
   padding: .4rem 1rem;
   border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  body .container header nav {
+    position: relative;
+  }
+  body .container header nav #nav-ul {
+    display: none;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    left: -15%;
+    top: 90%;
+  }
+  body .container header nav #nav-ul.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .container header nav #nav-ul li {
+    margin: 1rem;
+    text-align: center;
+  }
+  body .container header nav #nav-ul #resume {
+    border: none;
+    color: #2F80ED;
+  }
+  body .container header nav .hamburger {
+    display: block;
+  }
 }
 
 body .container header .hero {

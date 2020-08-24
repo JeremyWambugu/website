@@ -24,6 +24,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         // height: 10vh;
 
         #logo {
@@ -32,12 +33,24 @@ body {
           color: #2F80ED;
         }
 
+        .hamburger {
+          display: none;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+
 
 
         ul {
           display: flex;
           flex-direction: row;
-          justify-content: spa;
+          // justify-content: space-between;
 
           li {
             list-style: none;
@@ -60,6 +73,39 @@ body {
             border-radius: 5px;
             // color: #393737;
 
+          }
+        }
+      }
+
+      @media(max-width:600px) {
+        nav {
+          position: relative;
+
+          #nav-ul {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            position: absolute;
+            left: -15%;
+            top: 90%;
+
+            &.show {
+              display: flex;
+            }
+
+            li {
+              margin: 1rem;
+              text-align: center;
+            }
+
+            #resume {
+              border: none;
+              color: #2F80ED;
+            }
+          }
+
+          .hamburger {
+            display: block;
           }
         }
       }
