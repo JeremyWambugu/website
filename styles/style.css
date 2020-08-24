@@ -49,6 +49,9 @@ body .container header nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: spa;
+      -ms-flex-pack: spa;
+          justify-content: spa;
 }
 
 body .container header nav ul li {
@@ -94,7 +97,7 @@ body .container header .hero .hero-content h1 {
 }
 
 body .container header .hero .hero-content h3 {
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   font-weight: 400;
   line-height: 28px;
   color: #393737;

@@ -32,9 +32,12 @@ body {
           color: #2F80ED;
         }
 
+
+
         ul {
           display: flex;
           flex-direction: row;
+          justify-content: spa;
 
           li {
             list-style: none;
@@ -61,6 +64,7 @@ body {
         }
       }
 
+
       .hero {
         height: 90vh;
         display: flex;
@@ -80,7 +84,7 @@ body {
           }
 
           h3 {
-            font-size: 1.9rem;
+            font-size: 2.2rem;
             font-weight: 400;
             line-height: 28px;
             color: #393737;
