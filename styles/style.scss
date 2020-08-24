@@ -8,14 +8,14 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background: #EAEBE7;
+  background: #f7fff7;
 
   #blue {
     color: #2F80ED;
   }
 
   .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 
     header {
@@ -42,7 +42,7 @@ body {
 
             a {
               text-decoration: none;
-              font-size: 1.9rem;
+              font-size: 1.6rem;
               color: #000;
               cursor: pointer;
 
@@ -62,15 +62,16 @@ body {
       }
 
       .hero {
-        height: 85vh;
+        height: 90vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-
         // background: red;
 
+
+
         .hero-content {
+          margin: auto 0;
           // width: 50%;
 
           h1 {
@@ -84,7 +85,8 @@ body {
             line-height: 28px;
             color: #393737;
             letter-spacing: .2px;
-            // width: 55%;
+            // width: 100%;
+            // max-width: 95%;
           }
 
           .hero-icons {
@@ -124,7 +126,8 @@ body {
     main {
       .about {
         text-align: center;
-        height: 70vh;
+        // height: 50vh;
+        padding-bottom: 10rem;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -134,7 +137,7 @@ body {
         h2 {
           font-size: 3rem;
           font-weight: 600;
-          padding-bottom: 3rem;
+          padding-bottom: 2.5rem;
 
         }
 
@@ -143,8 +146,9 @@ body {
           font-size: 2rem;
           line-height: 29px;
           letter-spacing: 0.07rem;
-          width: 90%;
-          min-width: 75%;
+          // width: 90%;
+          max-width: 70%;
+          min-width: 100%;
           margin: 0 auto;
           // color: #393737fd;
 
@@ -162,7 +166,7 @@ body {
         h2 {
           font-weight: 600;
           font-size: 3rem;
-          padding-bottom: 5rem;
+          padding-bottom: 2.5rem;
 
         }
 
@@ -175,7 +179,7 @@ body {
           flex-wrap: wrap;
 
           .card {
-            box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
             border-radius: 10px;
             width: 28rem;
             height: 30rem;
@@ -209,14 +213,13 @@ body {
 
           .backend {
             transform: scale(.9);
-            border: 1px solid #857d7d1e;
 
             &:hover {
               transform: scale(1);
             }
 
             h3 {
-              color: #018827
+              color: #40916c;
             }
           }
 
@@ -230,7 +233,7 @@ body {
             }
 
             h3 {
-              color: #3E3938;
+              color: coral;
             }
           }
 
@@ -257,10 +260,10 @@ body {
           justify-content: center;
 
           .project {
-            height: 30rem;
-            width: 35rem;
-            background: grey;
-            margin: 1.5rem;
+            height: 26rem;
+            width: 25rem;
+            background: coral;
+            margin: 1.0rem;
             padding: 10px;
             border-radius: 1.1rem;
           }

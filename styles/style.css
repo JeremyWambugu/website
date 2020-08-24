@@ -7,7 +7,7 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  background: #EAEBE7;
+  background: #f7fff7;
 }
 
 body #blue {
@@ -15,7 +15,7 @@ body #blue {
 }
 
 body .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -59,7 +59,7 @@ body .container header nav ul li {
 
 body .container header nav ul li a {
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   color: #000;
   cursor: pointer;
 }
@@ -72,7 +72,7 @@ body .container header nav ul #resume {
 }
 
 body .container header .hero {
-  height: 85vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,9 +83,10 @@ body .container header .hero {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+body .container header .hero .hero-content {
+  margin: auto 0;
 }
 
 body .container header .hero .hero-content h1 {
@@ -122,7 +123,7 @@ body .container header .hero .hero-content .hero-icons img {
 
 body .container main .about {
   text-align: center;
-  height: 70vh;
+  padding-bottom: 10rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,7 +140,7 @@ body .container main .about {
 body .container main .about h2 {
   font-size: 3rem;
   font-weight: 600;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
 }
 
 body .container main .about p {
@@ -147,8 +148,8 @@ body .container main .about p {
   font-size: 2rem;
   line-height: 29px;
   letter-spacing: 0.07rem;
-  width: 90%;
-  min-width: 75%;
+  max-width: 70%;
+  min-width: 100%;
   margin: 0 auto;
 }
 
@@ -172,7 +173,7 @@ body .container main .technologies {
 body .container main .technologies h2 {
   font-weight: 600;
   font-size: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
 }
 
 body .container main .technologies .cards {
@@ -194,8 +195,8 @@ body .container main .technologies .cards {
 }
 
 body .container main .technologies .cards .card {
-  -webkit-box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   width: 28rem;
   height: 30rem;
@@ -229,7 +230,6 @@ body .container main .technologies .cards .frontend:hover {
 body .container main .technologies .cards .backend {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  border: 1px solid #857d7d1e;
 }
 
 body .container main .technologies .cards .backend:hover {
@@ -238,7 +238,7 @@ body .container main .technologies .cards .backend:hover {
 }
 
 body .container main .technologies .cards .backend h3 {
-  color: #018827;
+  color: #40916c;
 }
 
 body .container main .technologies .cards .tools {
@@ -253,7 +253,7 @@ body .container main .technologies .cards .tools:hover {
 }
 
 body .container main .technologies .cards .tools h3 {
-  color: #3E3938;
+  color: coral;
 }
 
 body .container main .projects-section h2 {
@@ -279,10 +279,10 @@ body .container main .projects-section .projects {
 }
 
 body .container main .projects-section .projects .project {
-  height: 30rem;
-  width: 35rem;
-  background: grey;
-  margin: 1.5rem;
+  height: 26rem;
+  width: 25rem;
+  background: coral;
+  margin: 1.0rem;
   padding: 10px;
   border-radius: 1.1rem;
 }
