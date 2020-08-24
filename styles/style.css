@@ -33,7 +33,6 @@ body .container header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
 }
 
 body .container header nav #logo {
@@ -335,7 +334,7 @@ body .container main .contacts .contact-icons .icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem;
+  margin: 2rem;
   cursor: pointer;
 }
 
